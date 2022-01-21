@@ -1,0 +1,31 @@
+#:kivy 2.0.0
+<TrovaTemperatura>:
+	label: label
+	input_text: input_text
+	GridLayout:
+		cols: 1
+
+		Image:
+			source: "logo1.png"
+			padding_y: [0, 20]
+
+		TextInput:
+			id: input_text
+			hint_text: "Cerca una città"
+			size_hint: (1, 0.2)
+			font_size: "20sp"
+			halign: "center"
+
+		Button:
+			text: "Cerca"
+			size_hint: (1, 0.2)
+			hold: True
+			background_color: "#0099ff"
+			on_press: root.search_temp()
+
+		Label:
+			id: label
+			text: ""
+			font_size: '20sp'
+			color: "#007dd1"
+
