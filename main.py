@@ -8,8 +8,8 @@ class TrovaTemperatura(Screen):
     label = ObjectProperty(None)
     input_text: ObjectProperty(None)
 
-    def __init__(self):
-        super(TrovaTemperatura, self).__init__()
+    def __init__(self, **kwargs):
+        super(TrovaTemperatura, self).__init__(**kwargs)
         self.size_hint = (0.8, 0.9)
         self.pos_hint = {"center_x": 0.5, "center_y": 0.5}
 
